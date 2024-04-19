@@ -6,7 +6,6 @@ let markerPosition = {
 let currentLevel = 0
 let boardElements = []
 let completedLevels = []
-let counter = allLevels.length
 
 document.addEventListener("DOMContentLoaded", () => {
     loadGame(currentLevel)
@@ -120,7 +119,6 @@ const checkEndLevel = () => {
         }
     }
     completedLevels.push(currentLevel)
-    counter = allLevels.length - completedLevels.length
 
     checkEndGame()
 }

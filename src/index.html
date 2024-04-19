@@ -18,11 +18,52 @@
                 display: block;
                 margin: 40px auto 50px;
             }
+
+            .win {
+                display: block;
+                margin: 0 auto;
+            }
+
+            #counter {
+                color: #fff;
+                text-align: center;
+            }
+
+            #board {
+                margin: 20px auto;
+                outline: 4px solid #fff;
+                position: relative;
+                display: block;
+                z-index: 3;
+                box-sizing: border-box;
+            }
+
+            .rotated-image {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+
+            .rotated-image2 {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+
+            .rotated-image3 {
+                -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+            }
+
+            .rotated-image4 {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
         </style>
     </head>
 
     <body>
         <img src="images/header.png" alt="header" class="header">
+        <div id="counter"></div>
+        <div id="board"></div>
         <script src="js/main.js"></script>
     </body>
 
